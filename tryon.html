@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Try-On - Arluxe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="tryon-container">
+
+    <h2>Virtual Hijab Try-On</h2>
+
+    <p class="tryon-desc">
+      Coba warna hijab secara virtual sebelum membeli.
+    </p>
+
+    <div class="camera-box">
+
+      <!-- KAMERA -->
+      <video id="camera" autoplay playsinline></video>
+
+      <!-- HIJAB PNG -->
+      <img
+        id="hijabOverlay"
+        class="hijab-overlay"
+        src="black-hijab.png"
+      >
+
+    </div>
+
+    <button class="checkout-btn" onclick="startCamera()">
+      Aktifkan Kamera
+    </button>
+
+    <h3>Pilih Warna Hijab</h3>
+
+    <div class="color-options">
+
+      <button
+        style="background:#111;"
+        onclick="changeHijabColor('tryitem.png')">
+      </button>
+
+      <button
+        style="background:#6b1f2b;"
+        onclick="changeHijabColor('trybrgdy.png')">
+      </button>
+
+      <button
+        style="background:#777;"
+        onclick="changeHijabColor('trygrey.png')">
+      </button>
+
+      <button
+        style="background:#9b8a6a;"
+        onclick="changeHijabColor('trykhaki.png')">
+      </button>
+
+      <button
+        style="background:#6b3f2a;"
+        onclick="changeHijabColor('trymhgny.png')">
+      </button>
+
+      <button
+        style="background:#c89f9c;"
+        onclick="changeHijabColor('tryrose.png')">
+      </button>
+
+    </div>
+
+    <a href="home.html" class="tryon-back">
+      Kembali ke Home
+    </a>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Arluxe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+  
+
+
+  <div class="cart-container">
+    <h2>Keranjang</h2>
+
+    <div id="cartItems"></div>
+
+    <h3 id="totalHarga">Total: Rp0</h3>
+    <button class="checkout-btn" onclick="ToCheckout()">
+
+  Checkout
+
+</button>
+  </div>
+
+  <!-- NAVBAR -->
+  <nav class="bottom-nav">
+    <a href="home.html">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+
+    <a href="cart.html" class="active">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>Cart</span>
+    </a>
+
+    <a href="pesanan.html">
+      <i class="fa-solid fa-box"></i>
+      <span>Orders</span>
+    </a>
+
+    <a href="profile.html">
+      <i class="fa-solid fa-user"></i>
+      <span>Profile</span>
+    </a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

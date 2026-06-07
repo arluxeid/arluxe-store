@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Arluxe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="checkout-container">
+    <h2>Checkout</h2>
+
+    <div class="checkout-box">
+      <label for="namaPenerima">Nama Penerima</label>
+      <input type="text" id="namaPenerima" placeholder="Masukkan nama penerima">
+
+      <label for="noHp">Nomor HP</label>
+      <input type="text" id="noHp" placeholder="Masukkan nomor HP">
+
+      <label for="alamat">Alamat Lengkap</label>
+      <textarea id="alamat" placeholder="Masukkan alamat lengkap"></textarea>
+
+      <label for="pengiriman">Jasa Pengiriman</label>
+      <select id="pengiriman" onchange="updateCheckoutTotal()">
+        <option value="10000">SiCepat - Rp10.000</option>
+        <option value="12000">J&T - Rp12.000</option>
+        <option value="15000">JNE - Rp15.000</option>
+      </select>
+
+      <label for="pembayaran">Metode Pembayaran</label>
+      <select id="pembayaran">
+        <option value="Transfer Bank">Transfer Bank</option>
+        <option value="COD">COD</option>
+        <option value="E-Wallet">E-Wallet</option>
+      </select>
+<p class="payment-info">
+  Pembayaran akan dikonfirmasi melalui WhatsApp Admin
+</p>
+
+      <div class="checkout-summary">
+        <p id="subtotalText">Subtotal: Rp0</p>
+        <p id="ongkirText">Ongkir: Rp0</p>
+        <h3 id="grandTotalText">Total: Rp0</h3>
+      </div>
+
+      <button class="checkout-btn" onclick="buatPesanan()">Buat Pesanan</button>
+    </div>
+  </div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+

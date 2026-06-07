@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk - Arluxe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="detail-container">
+
+  <!-- GAMBAR PRODUK -->
+  <img id="mainImage" class="detail-image">
+
+  <!-- DETAIL -->
+  <div class="detail-content">
+
+    <h2>Viscose Arluxe</h2>
+
+    <p class="detail-price">
+      Rp49.000
+    </p>
+
+    <p class="detail-desc">
+      Hijab dengan bahan adem, ringan,
+      tidak mudah kusut, nyaman digunakan
+      sehari-hari dan mudah dibentuk.
+    </p>
+
+    <div class="detail-info">
+      <p><b>Bahan:</b> Viscose Rayon</p>
+      <p><b>Ukuran:</b> 180 x 70 cm</p>
+    </div>
+
+    <button class="cart-detail-btn"onclick="addToCartDetail()">
+      Tambah ke Keranjang
+    </button>
+
+  </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script>
+
+document.getElementById("mainImage").src =
+localStorage.getItem("gambarProduk");
+
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>

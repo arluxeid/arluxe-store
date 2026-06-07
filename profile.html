@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - Arluxe</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <div class="profile-container">
+    <h2>Profile</h2>
+
+    <div class="profile-card">
+      <div class="profile-icon">
+        <i class="fa-solid fa-user"></i>
+      </div>
+
+      <h3 id="profileName">Nama User</h3>
+      <p id="profileEmail">email@example.com</p>
+      <p id="profileRole">Role: User</p>
+
+      <div class="profile-menu">
+  <div class="menu-item" onclick="goToOrders()">
+    <i class="fa-solid fa-box"></i>
+    <span>Pesanan Saya</span>
+  </div>
+
+  <div class="menu-item" onclick="goToAlamat()">
+    <i class="fa-solid fa-location-dot"></i>
+    <span>Alamat Saya</span>
+  </div>
+
+  <div class="menu-item" onclick="goToSettings()">
+    <i class="fa-solid fa-gear"></i>
+    <span>Pengaturan</span>
+  </div>
+</div>
+
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <nav class="bottom-nav">
+    <a href="home.html">
+      <i class="fa-solid fa-house"></i>
+      <span>Home</span>
+    </a>
+
+    <a href="cart.html">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <span>Cart</span>
+    </a>
+
+    <a href="pesanan.html">
+      <i class="fa-solid fa-box"></i>
+      <span>Orders</span>
+    </a>
+
+    <a href="profile.html" class="active">
+      <i class="fa-solid fa-user"></i>
+      <span>Profile</span>
+    </a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Arluxe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="profile-card">
+      <h2>Admin Panel</h2>
+
+      <div id="adminKosong" style="display: none;">
+        <p>Belum ada pesanan masuk.</p>
+      </div>
+
+      <div id="adminPesanan" style="display: none;">
+        <div class="admin-box">
+          <h3>Data Penerima</h3>
+          <p id="adminNama"></p>
+          <p id="adminNoHp"></p>
+          <p id="adminAlamat"></p>
+        </div>
+
+        <div class="admin-box">
+          <h3>Pengiriman & Pembayaran</h3>
+          <p id="adminPengiriman"></p>
+          <p id="adminPembayaran"></p>
+          <p id="adminStatus"></p>
+        </div>
+
+        <div class="admin-box">
+          <h3>Produk Dipesan</h3>
+          <div id="adminItems"></div>
+        </div>
+
+        <div class="admin-box">
+          <h3>Ringkasan</h3>
+          <p id="adminSubtotal"></p>
+          <p id="adminOngkir"></p>
+          <h3 id="adminTotal"></h3>
+        </div>
+
+        <div class="admin-box">
+          <h3>Ubah Status Pesanan</h3>
+          <div class="status-buttons">
+            <button type="button" onclick = "ubahStatusPesanan ('Sedang Dikemas')">Dikemas</button>
+            <button type="button" onclick = "ubahStatusPesanan ('Sedang Diantar')">Diantar</button>
+            <button type="button" onclick = "ubahStatusPesanan('Pesanan Tiba')">Tiba</button>
+          </div>
+        </div>
+      </div>
+
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
