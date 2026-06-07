@@ -367,8 +367,7 @@ localStorage.setItem(
   let nomorAdmin = "6281399758850";
 
   window.open(
-    `https://wa.me/qr/LGAEMJFR5MZNA1${nomorAdmin}?text=${pesan}`,
-    "_blank"
+   'https://wa.me/6281399758850'
   );
 }
 function loadPesanan() {
@@ -723,7 +722,7 @@ function checkoutWA() {
   let message =
   "Halo Admin Arluxe,Saya ingin konfirmasi pesanan saya.";
 
-  let url = "https://wa.me/qr/LGAEMJFR5MZNA1" + phone + "?text=" + encodeURIComponent(message);
+  let url = "https://wa.me/081399758850" + phone + "?text=" + encodeURIComponent(message);
 
   window.open(url, "_blank");
 }

@@ -970,6 +970,8 @@ button:active,
 }
 
 #camera {
+  position: relative;
+  z-index: 1;
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1425,14 +1427,20 @@ body {
 #hijabOverlay {
   position: absolute;
 
-  top: 55px;
+  top: -5px;
   left: 50%;
 
   transform: translateX(-50%);
 
-  width: 260px;
+  width: 1000px;
 
   opacity: 1;
 
-  pointer-events: none;
+pointer-events: none;
+
+z-index: 10;
+  opacity: 2
+  
+
+  
 }
